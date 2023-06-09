@@ -32,6 +32,7 @@ function App() {
 		<>
 			<div className="console-header">
 				<span className="console-title">Build Monitor</span>
+				<span className="console-author">By DetKewlDog</span>
 			</div>
 			<div className="console-body">
 				<Config

@@ -1,11 +1,18 @@
 :root {
     --bg1: #1a1a1a;
     --bg2: #262626;
+
     --hl1: #2f2f2f;
     --hl2: #424242;
     --hl3: #4c4c4c;
+
+    --green1: #45a049;
+    --green2: #4caf50;
+
     --text1: #ffffff;
     --text2: #aaaaaa;
+    --text3: #777777;
+
     --error: #ff4d4d;
     --print: #d6e4ff;
 }
@@ -13,7 +20,7 @@
 body {
     background-color: var(--bg1);
     color: var(--text1);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Consolas', monospace;
     overflow: hidden;
 }
 
@@ -26,6 +33,7 @@ body {
     border-top-right-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .console-title {
@@ -33,6 +41,13 @@ body {
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.console-author {
+    color: var(--text3);
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 .console-body {
@@ -105,6 +120,7 @@ body {
     transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 15px;
 	text-indent: 10px;
+    font-family: 'Consolas', monospace;
 }
 
 .console-input input:hover {
@@ -135,32 +151,33 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    font-family: 'Consolas', monospace;
 }
 
 .console-input button:hover {
     background-color: var(--hl1);
 	transform: translateY(-2px);
-	transition: transform 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .console-input button:active,
 .console-input button:not(:hover) {
     background-color: var(--bg2);
 	transform: translateY(2px);
-	transition: transform 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 }
 
 .console-input button.on {
-	background-color: var(--hl2);
+	background-color: var(--green1);
 }
 
 .console-input button:hover.on {
-	background-color: var(--hl3);
+	background-color: var(--green2);
 }
 
 .console-input button:active.on,
 .console-input button:not(:hover).on {
-    background-color: var(--hl2);
+    background-color: var(--green1);
 	transform: translateY(2px);
 	transition: transform 0.1s ease-in-out;
 }
