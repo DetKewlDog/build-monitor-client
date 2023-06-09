@@ -14,7 +14,7 @@
     --text3: #777777;
 
     --error: #ff4d4d;
-    --print: #d6e4ff;
+    --print: #b6c2d8;
 }
 
 body {
@@ -96,6 +96,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
 	padding-left: 2.5px;
+    color: var(--print)
 }
 
 .console-output pre.error {
@@ -103,7 +104,7 @@ body {
 }
 
 .console-output pre.print {
-    color: var(--print);
+    color: var(--text1);
 }
 
 .console-input input {
