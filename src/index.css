@@ -92,11 +92,12 @@ body {
 }
 
 .console-output pre {
-    margin: 0;
     font-size: 14px;
     line-height: 1.4;
 	padding-left: 2.5px;
-    color: var(--print)
+    color: var(--print);
+    width: max-content;
+    margin: 0;
 }
 
 .console-output pre.error {
