@@ -43,7 +43,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.console-author {
+.console-author a {
     color: var(--text3);
     font-size: 14px;
     margin-left: auto;
